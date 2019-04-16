@@ -9,7 +9,8 @@
    </head>
    <body>
        <nav class="navbar navbar-dark bg-dark fixed-top justify-content-between">
-           <a class="navbar-brand">Giphy</a>
+           <a class="navbar-brand" href="index.html" >Giphy</a>
+           <button id="Favorites" class"btn">Favorites</button>
            <div class="form-inline">
                <input id="search-term" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0">Search</button>
@@ -24,10 +25,15 @@
        </div>
 
        <!-- Modal -->
-       <div id="modal01" class="modal" onclick="this.style.display='none'">
+       <div id="modal01" class="modal" >
            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
            <div class="modal-content">
                <img id="img01">
+               <div>
+                   <button class="icon">Add to Favorites</button>
+                   <button class="closeModal">close</button>
+                   <!-- <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/heart-favourite-favorite-love-like-outline-interface-4-14712.png"> -->
+                </div>
            </div>
        </div>
 
