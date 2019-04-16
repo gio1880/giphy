@@ -42,8 +42,6 @@ $("#Favorites").click(function(){
     }
 });
 
-$("#icon").css("background","white");
-
 $('.modal-hover-opacity').click(function(){
 	$('#modal01').modal({
 		backdrop: 'static'
@@ -55,4 +53,5 @@ function onClick(element) {
  document.getElementById("img01").src = element.src;
  document.getElementById("modal01").style.display = "block";
  currentUrl = element.src;
+ $("#icon").css("background","white");
 }
